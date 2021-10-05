@@ -12,12 +12,12 @@ export PATH=$PATH:$FLUME_HOME/bin
 3. Tạo file twitter.conf trong thư mục /apache-flume-1.9.0-bin/conf:
 Tiến hành Config file:
 
-# Name the components on this agent
+## Name the components on this agent
 TwitterAgent.sources = Twitter
 TwitterAgent.channels = MemChannel
 TwitterAgent.sinks = HDFS
 
-# Source
+## Source
 TwitterAgent.sources.Twitter.type= org.apache.flume.source.twitter.TwitterSource
 TwitterAgent.sources.Twitter.channels = MemChannel
 TwitterAgent.sources.Twitter.consumerKey = <consumerKey>
